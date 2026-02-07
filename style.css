@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Noto+Sans+Modi&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.main {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/8200f588-2e93-4c95-8eab-ebba17821657/web/NP-en-20250616-TRIFECTA-perspective_e0c4f5e1-3bf5-43f0-9fb3-49defe24dd5c_large.jpg");
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.main nav {
+    padding: 25px;
+    display: flex;
+    max-width: 80vw;
+    min-width: 30vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.main .logo {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+.main .btn {
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    width: 80px;
+    background-color: red;
+    border-radius: 0.25rem;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main .text1 {
+    position: relative;
+    z-index: 10;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100%-50px);
+    overflow-wrap: break-word;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.main .text1>:first-child {
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 70px;
+    width: 650px;
+    text-align: center;
+    margin: 10px 0px;
+    margin-top: 105px;
+}
+
+.main .text1> :nth-child(2) {
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.main .text1> :nth-child(3) {
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button button {
+    padding: 7px 20px;
+    width: 225px;
+    height: 55px;
+    text-align: start;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.button #email {
+    height: 51px;
+    width: 300px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(24, 24, 24, 0.7);
+    padding: 1px 10px;
+    border: 0.1px solid rgb(211, 206, 206);
+}
+
+#email::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(223, 217, 217);
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(123, 120, 120);
+    border-radius: 100%;
+}
+
+.trending {
+    color: white;
+    margin: 20px;
+    margin-left: 130px;
+}
+
+.trending ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.trending h2 {
+    color: rgb(211, 203, 203);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.trending button {
+    border-style: none;
+}
+
+.trending .buttons:hover {
+    width: 210px;
+    height: 310px;
+}
+
+.trending .buttons {
+    width: 200px;
+    height: 300px;
+    padding: 100px;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: width 1s, height 1s;
+}
+
+.trending .btn-1 {
+    background-image: url("https://occ-0-2797-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABflurCUYUk4JHDLI3jYyBa7GqNn7IgWdoSC70DMcgmPLEOLHCqCCc9VPs-CHr50ovXrLJCZeYb2b29tq9z6qnMWiKhowhKSOygLyCd5XykxE4WMzo7_Kz6oDk5kzuzFqTMfI.webp?r=5d2");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trending .btn-2 {
+    background-image: url("https://occ-0-2797-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWbVt8SbLqwQtrRbCG9VpQXX_Z6c57wYpD_UHJSW-eTT-oVf11K79jU-gQjcRfKqQ4aqPgsRjrPNLPcxfS1P6INHzVIQqhI7huMP5no6v-7or-WycCWfHPXs4xQmfZx0CvOY.webp?r=b91");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trending .btn-3 {
+    background-image: url("https://occ-0-2797-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbT2qAYsSSeoFZm3OFNQOcHhNr16KSAVssEPQ1n2UvTEhiCRfP2uNQwqwAiL45_0Izlb2tna8O2hJ6y2WfVymI-7o8SwlLmcq_o.webp?r=013");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trending .btn-4 {
+    background-image: url("https://occ-0-2797-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYVcRfFB91jy3f8-_Alb6H4RUzqXFRA7ejjOfCOXF20XLRVeCyT3ZFEimKbZAimt2ayVUWXSnp6ApNxpoK0mA3XzJD__irrDkdMD6lDrOFPSvQqP8s0xn2dNBaU9JxIu4lUd.webp?r=63b");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buttons span {
+    color: black;
+    font-size: 100px;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    line-height: 1;
+    display: inline-block;
+    height: 1em;
+    font-weight: 700;
+    -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.reason {
+    margin-top: 80px;
+    color: white;
+    margin-left: 130px;
+}
+
+.reason h2 {
+    font-weight: 700;
+    color: rgb(211, 203, 203);
+}
+
+.reason ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.reason button {
+    border-style: none;
+}
+
+.reason .buttonss {
+    width: 240px;
+    height: 280px;
+    color: rgb(211, 203, 203);
+    background-color: rgba(95, 95, 225, 0.231);
+    position: relative;
+    border-radius: 15px;
+    display: grid;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.reason .buttonss :first-child {
+    font-size: 23px;
+    font-weight: 700;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: blue;
+}
+
+.reason .buttonss :nth-child(2) {
+    font-size: 16px;
+    justify-content: 15px;
+    color: rgb(231, 219, 219);
+    margin-bottom: 100px;
+
+}
+
+.reason .buttonss svg {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.questions {
+    margin-top: 70px;
+    margin-left: 130px;
+    color: white;
+}
+
+.questions h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(211, 203, 203);
+    margin-top: 40px;
+}
+
+.questions .questionss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    font-size: 25px;
+    max-width: 70vw;
+    background-color: rgb(49, 46, 46);
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgb(211, 203, 203);
+    cursor: pointer;
+}
+
+.questions .questionss:hover {
+    background-color: rgba(176, 169, 169, 0.365);
+}
+
+.secondl {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.secondl p {
+    font-size: 20px;
+}
+
+.secondl #email {
+    width: 550px;
+}
+
+.last {
+    margin-left: 130px;
+    color: rgb(211, 203, 203);
+}
+
+.last a {
+    color: rgb(211, 203, 203);
+}
+
+.last .second {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width:1180px) {
+    .reason ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 50px;
+    }
+
+    .reason .btn-1 {
+        width: 400px;
+    }
+
+    .reason .btn-2 {
+        width: 400px;
+    }
+
+    .reason .btn-3 {
+        width: 400px;
+    }
+
+    .reason .btn-4 {
+        width: 400px;
+    }
+
+    .secondl .button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 130px;
+    }
+
+    .last .second {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width:980px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        /* Prevent horizontal scroll */
+    }
+
+    .main {
+        background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/8200f588-2e93-4c95-8eab-ebba17821657/web/NP-en-20250616-TRIFECTA-perspective_e0c4f5e1-3bf5-43f0-9fb3-49defe24dd5c_large.jpg");
+        min-height: 100vh;
+        /* Use min-height instead of height */
+        width: 100%;
+        /* Avoid 100vw to prevent scrollbar issues */
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        word-wrap: normal;
+        overflow-x: visible;
+    }
+
+
+    .main .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.74;
+    }
+
+    .reason ol {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+    }
+
+    .reason h2 {
+        margin-left: 50px;
+    }
+
+    .reason .btn-1 {
+        width: 80vh;
+        margin-left: 0;
+    }
+
+    .reason .btn-2 {
+        width: 80vh;
+        margin-left: 0;
+    }
+
+    .reason .btn-3 {
+        width: 80vh;
+        margin-left: 0;
+    }
+
+    .reason .btn-4 {
+        width: 80vh;
+        margin-left: 0;
+    }
+
+    .secondl {
+        display: grid;
+        margin-left: 130px;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        gap: 0px;
+        padding: 0px;
+
+    }
+
+    .secondl .button {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: auto;
+        position: relative;
+        gap: auto;
+    }
+
+    .secondl .button button {
+        position: absolute;
+        left: 0px;
+        margin-top: 140px;
+    }
+
+    .last .second {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width:650px) {
+    .main .text1>:first-child{
+        max-width: 80vw;
+        font-size: 30px;
+    }
+    .text1 .button{
+        display: flex;
+        flex-direction: column;
+    }
+    .last .second {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.btnl button {
+    width: 110px;
+    height: 35px;
+    color: rgb(211, 203, 203);
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgba(19, 18, 18, 0.336);
+    border: 1px solid white;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnl .word {
+    gap: 5px;
+
+}
+
+.btnl p {
+    color: rgba(211, 203, 203, 0.817);
+    margin-bottom: 50px;
+}
+
+.btnl .lastpp {
+    color: rgba(217, 201, 201, 0.724);
+    font-size: 16px;
+    margin-bottom: 150px;
+}
+
+.btnl .lastpp a {
+    color: blue;
+}
